@@ -1,0 +1,21 @@
+<div class='item item-divider'>물건명: </div>
+<label class='item item-input first-name-input'>
+  <input type='text' autocapitalize='words' ng-model='productinfo.Title' ng-blur='onTitleBlur()' placeholder='이름 *'>
+  <i class="icon" style='width: 40px; text-align: center;'></i>
+</label>
+<label class='item item-input last-name-input'>
+  <input type='text' autocapitalize='words' ng-model='productinfo.Price' ng-blur='onPriceBlur()'  placeholder='가격 *'>
+  <i class="icon" style='width: 40px; text-align: center;'></i>
+</label>
+<label class='item item-input third-thing-input'>
+  <input type='text' autocapitalize='words' ng-model='productinfo.Category' ng-blur='onCategoryBlur()'  placeholder='카테고리 *'>
+  <i class="icon" style='width: 40px; text-align: center;'></i>
+</label>
+
+<label class='item item-input fourth-thing-input'>
+    <input type='text' autocapitalize='words' ng-model='productinfo.Descriptions' ng-blur='onDescriptionsBlur()'  placeholder='설명 *'>
+    <i class="icon" style='width: 40px; text-align: center;'></i>
+</label>
+<label class='item item-input photo-thing-input'>
+	<button ng-click="getPhoto()" class="button button-block button-primary">사진찍기</button>
+</label>

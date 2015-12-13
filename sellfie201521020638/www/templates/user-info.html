@@ -1,0 +1,70 @@
+<div class="userInfos">
+<div ng-if='isLoggedIn'>
+
+<span class='checkout-form-error'></span>
+<span class='checkout-form-description'>나의 회원 정보들:</span>
+
+    <div class='list checkout-form'>
+        <!-- <img src="" style="width: 10em; height: 10em; margin: 1em auto; display: block; float: none;"/>
+         -->    <ul >
+                <li>
+                    <label class="item item-input first-name-input">First Name : 
+                        <input type='text' autocapitalize='words' ng-model='userinfo.firstName' ng-blur='onFirstNameBlur()' placeholder='이름 *' />
+                    </label>
+                </li>
+                <li>
+                    <label class="item item-input last-name-input">Last Name : 
+                        <input type='text' autocapitalize='words' ng-model='userinfo.lastName' ng-blur='onFirstNameBlur()' placeholder='성 *' />
+                    </label>
+                </li>
+               <!--  <li>
+                    <label class="item item-input country-input">Country : 
+                        <input type='text' autocapitalize='words' ng-model='userinfo.country' ng-blur='onFirstNameBlur()' placeholder='국가 *' />
+                    </label>
+                </li> 
+                <hr>-->
+                <!-- <li>
+                    <fieldset>
+                        <legend>Phone</legend>
+                            <label class="km-inline-field km-label-above km-required" style="width: 200px;">
+                            Phone Number
+                            <input type="text" value="+359 555 5555" />
+                            </label>
+                            <label class="km-inline-field km-label-above" style="width: 200px;">
+                                Type
+                                <select id="phone-type">
+                                    <option value="First Option">Mobile</option>
+                                    <option value="Second Option">Stationary</option>
+                                    <option value="Third Option">iPhone</option>
+                                </select>
+                          </label>  
+                    </fieldset>                   
+                </li>
+                <hr> -->
+                <li>
+                    <fieldset>
+                        <legend>Email</legend>
+                        <input type="email" ng-model="userinfo.email" ng-blur='onEmailBlur()' placeholder="이메일 *">
+                    </fieldset>
+                </li>
+                <!-- <li>
+                    <label>Location
+                          <input type='text' autocapitalize='words' ng-model='userinfo.city' ng-blur='onCityBlur()' placeholder='City *'>
+                    </label>
+                </li>            
+
+                <li>
+                    <fieldset>
+                        <legend>Notes</legend>
+                        <textarea style="height: 100px;"> Your notes here</textarea>
+                    </fieldset>
+                </li>           -->
+            </ul>
+    </div>
+</div>
+
+<div ng-if='!isLoggedIn'>
+    <br><i class="icon ion-ios-rainy-outline empty-cart-icon"></i><h3>회원 정보가 없습니다 !</h3>
+    </ion-content>
+</div>
+</div>

@@ -1,0 +1,32 @@
+<ion-view view-title="myPage" cache-view="false" class="myPages">
+    
+  <ion-content class= "myPages5">
+      <tab-slide-box tab="2" class="myPages4">
+			    	<div class="tsb-icons">
+			    		<div class="tsb-ic-wrp">
+							<a href="javascript:;" class="ion-bag"></a>
+							<a href="javascript:;" class="ion-cash"></a>
+                            <a href="javascript:;" class="ion-person"></a>
+						</div>
+			    	</div>
+			        <ion-slide-box show-pager="false" on-slide-changed="slideHasChanged($index)" class="myPages3">
+			            <ion-slide>
+			                <h3>장바구니</h3>
+                            <ion-mypage cartproducts='cartProducts'></ion-mypage>
+			            </ion-slide>
+			            <ion-slide>
+			                <h3>판매목록</h3>
+                            <sales userinfo = 'userInfo'></sales>
+			            </ion-slide>
+			            <ion-slide class ="myPages2">
+			                <h3>회원정보</h3>
+                            <br>
+                            <user-info userinfo = 'userInfo'></user-info>
+                            </div>
+			            </ion-slide>
+			            
+			        </ion-slide-box>
+          	</tab-slide-box>
+  </ion-content>                            //추가
+<hr>
+</ion-view>

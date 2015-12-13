@@ -1,0 +1,29 @@
+<ion-modal-view>
+  <ion-header-bar class="bar-positive">
+    <h1 class="title">로그인</h1>
+    <div class="buttons">
+      <button class="button button-clear" ng-click="closeLogin()">
+      닫기</button>
+    </div>
+  </ion-header-bar>
+  <ion-content>
+    <form>
+      <div class="list">
+        <label class="item item-input">
+          <span class="input-label">이름</span>
+          <input type="email" placeholder='너의 이메일주소' ng-model="loginData.username">
+        </label>
+        <label class="item item-input">
+          <span class="input-label">비밀번호</span>
+          <input type="password" placeholder='너의 비밀번호' ng-model="loginData.password">
+        </label>
+        <label class="item">
+          <div class="assertive" style="text-align:center" ng-show="error">{{error}}</div>
+          <button class="button button-block button-positive" ng-click="doLogin()">로그인</button>
+        </label>
+      </div>
+    </form>
+    <button class="button button-block button-clear button-calm" ng-click="forgot()">비밀번호를 잊으셨나요?</button>
+
+  </ion-content>
+</ion-modal-view>

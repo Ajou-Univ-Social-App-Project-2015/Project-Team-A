@@ -1,0 +1,27 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/cordova-js-src/exec.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/cordova-js-src/platform.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/cordova.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/www/lib/ionic/js/angular-ui/angular-ui-router.min.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/com.parse.cordova.core.pushplugin/www/cdv-plugin-parse.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/cordova-plugin-console/tests/tests.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/cordova-plugin-console/www/console-via-logger.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/cordova-plugin-console/www/logger.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/plugins/com.parse.cordova.core.pushplugin/www/cdv-plugin-parse.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/plugins/cordova-plugin-device/www/device.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/plugins/cordova-plugin-splashscreen/www/splashscreen.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/plugins/cordova-plugin-statusbar/www/statusbar.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/plugins/cordova-plugin-whitelist/whitelist.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/plugins/ionic-plugin-keyboard/www/android/keyboard.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/platforms/android/platform_www/cordova_plugins.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/cordova-plugin-device/src/blackberry10/index.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/cordova-plugin-device/src/browser/DeviceProxy.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/cordova-plugin-device/src/firefoxos/DeviceProxy.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/cordova-plugin-device/src/tizen/DeviceProxy.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/cordova-plugin-device/src/ubuntu/device.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/www/js/controllers.js",
+        "C:/Users/JUNGWOO/Downloads/sellfie/sellfie/plugins/cordova-plugin-device/www/device.js",
+        "/Users/user/Downloads/sellfie201521020638/www/js/services.js"
+    ]
+}

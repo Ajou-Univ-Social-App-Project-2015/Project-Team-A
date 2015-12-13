@@ -1,0 +1,85 @@
+<ion-side-menus enable-menu-with-back-views="false">
+
+  <ion-side-menu-content>
+    <ion-nav-bar class="bar-black">
+      <ion-nav-back-button class="button-icon ion-arrow-left-c">
+      </ion-nav-back-button>
+      <ion-nav-buttons side="left">
+        <button class="button icon button-positive ion-navicon" menu-toggle="left"></button>
+      </ion-nav-buttons>
+      <ion-nav-buttons side="right">
+        <button class="button icon button-positive ion-bag" menu-toggle="right"></button>
+      </ion-nav-buttons>
+    </ion-nav-bar>
+      
+      
+      
+    <ion-nav-view name="menuContent">
+        <ion-tabs class="tabs-icon-top tabs-color-active-positive">
+
+            <!-- Dashboard Tab -->
+            <ion-tab title="물품" icon-off="ion-ios-cart-outline" icon-on="ion-ios-cart" href="#/app/catalog">
+                <ion-nav-view name="catalog"></ion-nav-view>
+            </ion-tab>
+
+            <!-- Chats Tab -->
+            <ion-tab title="게시" icon-off="ion-paper-airplane" icon-on="ion-paper-airplane" href="#/app/post">
+                <ion-nav-view name="post"></ion-nav-view>
+            </ion-tab>
+
+            <!-- Account Tab -->
+            <ion-tab title="마이페이지" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/app/myPage">
+                <ion-nav-view name="myPage"></ion-nav-view>
+            </ion-tab>
+
+            <!-- Hello Tab 
+            <ion-tab title="Hello" icon-off="ion-ios-gear-outline" icon-on="ion-ios-gear" href="#/tab/hello">
+                <ion-nav-view name="tab-hello"></ion-nav-view>
+            
+            </ion-tab>
+        -->
+        </ion-tabs>
+    </ion-nav-view>
+  </ion-side-menu-content>
+
+    
+    
+    
+    
+    
+  <ion-side-menu side="left">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">지금 쇼핑하세요!</h1>
+    </ion-header-bar>
+    <ion-header-bar class="bar-subheader" style="padding: 0 !important;">
+      <div class="item item-input-inset my-menu">
+        <label class="item-input-wrapper">
+          <i class="icon ion-search placeholder-icon"></i>
+          <input type="search" placeholder="검색" ng-model="search.query" on-return="doSearch()">
+        </label>
+      </div>
+    </ion-header-bar>
+    <ion-content class="my-menu">
+      <ion-list>
+        <ion-item nav-clear menu-close style="margin-top:11px;" href="#/app/catalog">모든 물품들</ion-item>
+        <ion-item nav-clear menu-close href="#/app/category/{{menucategory.id}}" ng-repeat="menucategory in menucategories">
+          {{menucategory.Prefix}} {{menucategory.Name}} ({{menucategory.Prods}})
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-side-menu>
+
+    
+    
+  <ion-side-menu side="right">
+    <ion-header-bar class="bar-dark">
+      <h1 class="title">장바구니</h1>
+    </ion-header-bar>
+    <ion-content class='has-footer has-subfooter'>
+      <ion-cart cartproducts='cartProducts'></ion-cart>
+    </ion-content>
+    <ion-cart-sub-footer menu-close></ion-cart-sub-footer>
+    <ion-cart-footer menu-close></ion-cart-footer>
+  </ion-side-menu>
+
+</ion-side-menus>

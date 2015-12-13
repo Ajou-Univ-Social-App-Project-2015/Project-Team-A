@@ -1,0 +1,24 @@
+<div class="modal image-slider-modal" style="height:100%;">
+
+  <ion-header-bar>
+    <button class="button button-light icon ion-ios-arrow-back" ng-click='closeModal()'></button>
+    <h1 class="title">자세히 보기</h1>
+  </ion-header-bar>
+        <ion-content style="height:100%;">
+          <div class='image-slide-div'>
+             <dic class = "item item-image">
+                <img ng-src="{{ product.Image1 }}" class='image-slide'></img>
+              </dic>
+            <div class= "item item-image">
+                <img ng-src="{{ cartproduct.Image1 }}" class='image-slide'></img>
+            </div>
+    <h4 class='image-slide-description'>&nbsp;&nbsp;상품설명 </h4>
+    
+    <textarea style="height:inherit; width:100%; margin-left:10px; margin-right:10px;">{{product.Description}}{{cartproduct.Title}}</textarea>
+            <br>
+      </div>
+        <div class="button-bar">
+        <button class="button button-positive ion-ios-cart-outline icon-left" ng-click='addToCart(product)'>{{product.myPrice}}{{cartproduct.Price}}원에 구매</button>
+    </div>
+</ion-content>
+</div>

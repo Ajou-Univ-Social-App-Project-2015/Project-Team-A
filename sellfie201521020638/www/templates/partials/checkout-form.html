@@ -1,0 +1,13 @@
+<span class='checkout-form-error'></span>
+<span class='checkout-form-description'>개인 정보들을 채우세요:</span>
+
+<div class='list checkout-form'>
+  <checkout-name userinfo='userinfo'></checkout-name>
+  <checkout-account userinfo='userinfo' ng-if='!isLoggedIn'></checkout-account>
+  <span class='checkout-form-error'>{{error}}</span>  
+  <!-- <checkout-address userinfo='userinfo'></checkout-address> -->
+  <div>
+    <h2 class='checkout-total'>총계: {{total}}원</h2>
+    <br><br>
+  </div>
+</div>
